@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anjra - Pocket Money Power!</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Anjra - Empower Kids with Financial Literacy</title>
+    <meta name="description" content="A fun and simple app for parents to manage their kids' chores and allowances.">
+    <!-- Modern Font: Outfit -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- SVG Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
 </head>
 <body>
@@ -20,8 +24,9 @@
                     Anjra
                 </a>
                 <div class="nav-links">
-                    <a href="privacy.html">Privacy Policy</a>
-                    <a href="#" class="btn-download">Download App</a>
+                    <a href="#features">Features</a>
+                    <a href="privacy.html">Privacy</a>
+                    <a href="#download" class="btn-primary">Get the App</a>
                 </div>
             </nav>
         </div>
@@ -31,36 +36,64 @@
         <section class="hero">
             <div class="container">
                 <h1>Pocket Money Power!</h1>
-                <p>The fun, educational way for kids to track allowances, learn chores, and manage money. Built for modern families.</p>
+                <p>The fun, educational way for kids to track allowances, learn chores, and manage money. Built specifically for modern families.</p>
                 
                 <div class="cta-buttons">
-                    <a href="#" class="btn-download">Get for Android</a>
-                    <a href="#" class="btn-download" style="background: var(--text); margin-left:10px;">Get for iOS</a>
+                    <a href="#download" class="btn-primary">
+                        <i data-lucide="play" width="20" height="20"></i> Play Store
+                    </a>
+                    <a href="#download" class="btn-secondary">
+                        <i data-lucide="apple" width="20" height="20"></i> App Store
+                    </a>
                 </div>
 
-                <img src="assets/images/header_image.png" alt="Anjra App Preview" class="hero-image">
+                <div class="hero-image-wrapper">
+                    <!-- Ensure the image path exists based on what was in the directory -->
+                    <img src="assets/images/header_image.png" alt="Anjra Dashboard Preview" class="hero-image">
+                </div>
             </div>
         </section>
 
-        <section class="features">
+        <section id="features" class="features">
             <div class="container">
-                <h2>Why Kids (and Parents) Love Anjra</h2>
+                <h2 class="section-title">Why Parents & Kids Love Anjra</h2>
                 <div class="grid">
+                    <!-- Feature 1 -->
                     <div class="card">
-                        <div class="card-icon">💰</div>
-                        <h3>Track Balance</h3>
-                        <p>Know exactly how much pocket money you have saved up for that special toy.</p>
+                        <div class="card-icon" style="background: linear-gradient(135deg, #FFEDD5 0%, #FFEDD5 100%); color:#F97316;">
+                            <i data-lucide="coins" width="40" height="40" stroke-width="2.5"></i>
+                        </div>
+                        <h3>Virtual Allowance</h3>
+                        <p>Teach financial literacy safely. Anjra uses educational mock balances—no real banks or credit cards are linked.</p>
                     </div>
+                    <!-- Feature 2 -->
                     <div class="card">
-                        <div class="card-icon">🧹</div>
+                        <div class="card-icon" style="background: linear-gradient(135deg, #E0F2FE 0%, #E0F2FE 100%); color:#0EA5E9;">
+                            <i data-lucide="check-circle-2" width="40" height="40" stroke-width="2.5"></i>
+                        </div>
                         <h3>Chore Management</h3>
-                        <p>Earn extra rewards by completing chores assigned by parents.</p>
+                        <p>Parents can easily assign daily or weekly chores and reward their children with virtual "Anjra" coins upon completion.</p>
                     </div>
+                    <!-- Feature 3 -->
                     <div class="card">
-                        <div class="card-icon">🔒</div>
-                        <h3>Safe & Secure</h3>
-                        <p>A closed ecosystem. No real money transfers, just educational tracking.</p>
+                        <div class="card-icon" style="background: linear-gradient(135deg, #FCE7F3 0%, #FCE7F3 100%); color:#EC4899;">
+                            <i data-lucide="shield-check" width="40" height="40" stroke-width="2.5"></i>
+                        </div>
+                        <h3>Kid-Safe & Ad-Free</h3>
+                        <p>A closed ecosystem built for family safety. Zero third-party ads, strict data privacy, and COPPA compliant.</p>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="download" class="download">
+            <div class="container">
+                <h2>Ready to Start?</h2>
+                <p>Download Anjra today and help your kids build healthy financial habits that last a lifetime.</p>
+                <div class="cta-buttons" style="margin-bottom:0;">
+                    <!-- Placeholder buttons to the app stores -->
+                    <a href="#" class="btn-secondary">Get for Android</a>
+                    <a href="#" class="btn-secondary">Get for iOS</a>
                 </div>
             </div>
         </section>
@@ -68,10 +101,18 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 Anjra. All rights reserved.</p>
-            <p><a href="privacy.html">Privacy Policy</a> | <a href="mailto:support@anjra.app">Contact Support</a></p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="mailto:support@anjra.app">Contact Support</a>
+            </div>
+            <p class="copyright">&copy; 2026 Anjra. All rights reserved.</p>
         </div>
     </footer>
 
+    <!-- Initialize Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 </html>
